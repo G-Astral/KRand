@@ -1,0 +1,32 @@
+﻿<Window x:Class="KRand.DevelopersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KRand"
+        mc:Ignorable="d"
+        Title="О разработчиках" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="DevelopersBG.png"/>
+        </Grid.Background>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,40,0,0">
+            <TextBlock Text="Программист:" FontSize="20" Margin="0,10,0,0" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena"/>
+            <TextBlock Text="Алексанян Гарник" FontSize="20" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena"/>
+            <TextBlock Text="vk.com/g.astral" FontSize="20" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena" PreviewMouseLeftButtonDown="GarnikOpen" Cursor="Hand"/>
+            
+            <TextBlock Text="Дизайнер:" FontSize="20" Margin="0,10,0,0" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena"/>
+            <TextBlock Text="Девочкина Яна" FontSize="20" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena"/>
+            <TextBlock Text="vk.com/gxdstearz" FontSize="20" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena" PreviewMouseLeftButtonDown="YanaOpen" Cursor="Hand"/>
+            
+            <TextBlock Text="Авторы Идеи:" FontSize="20" Margin="0,10,0,0" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena"/>
+            <TextBlock Text="Антоненкова Екатерина" FontSize="20" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena"/>
+            <TextBlock Text="vk.com/wowekies" FontSize="20" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena" PreviewMouseLeftButtonDown="KatyaOpen" Cursor="Hand"/>
+            <TextBlock Text="Иванов Мирон" FontSize="20" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena"/>
+            <TextBlock Text="vk.com/mrnrg" FontSize="20" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena" PreviewMouseLeftButtonDown="MironOpen" Cursor="Hand"/>
+            <TextBlock Text="Фатиев Александр" FontSize="20" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena"/>
+            <TextBlock Text="vk.com/cumandoor" FontSize="20" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena" PreviewMouseLeftButtonDown="SashaOpen" Cursor="Hand"/>
+        </StackPanel>
+    </Grid>
+</Window>

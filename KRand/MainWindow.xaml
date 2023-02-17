@@ -1,0 +1,61 @@
+﻿<Window x:Class="KRand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KRand"
+        mc:Ignorable="d"
+        Title="Главное меню" Height="675" Width="1200"
+        WindowState="Maximized">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="MainWindBG.png"></ImageBrush>
+        </Grid.Background>
+        <StackPanel VerticalAlignment="Center">
+            <Label Margin="0,60,0,0" Height="auto" Width="auto" Foreground="White" HorizontalContentAlignment="Center" Content="Выберите число локаций:" FontFamily="Lena" FontSize="30"/>
+            <ComboBox
+            x:Name="locationBox"
+            SelectedIndex="7" 
+            Height="40" 
+            Width="300" 
+            HorizontalContentAlignment="Center" 
+            VerticalContentAlignment="Center" FontFamily="Lena" FontSize="20">
+                <TextBlock><Run Text="1 локация"/></TextBlock>
+                <TextBlock><Run Text="2 локации"/></TextBlock>
+                <TextBlock><Run Text="3 локации"/></TextBlock>
+                <TextBlock><Run Text="4 локации"/></TextBlock>
+                <TextBlock><Run Text="5 локаций"/></TextBlock>
+                <TextBlock><Run Text="6 локаций"/></TextBlock>
+                <TextBlock><Run Text="7 локаций"/></TextBlock>
+                <TextBlock><Run Text="8 локаций"/></TextBlock>
+                <TextBlock><Run Text="9 локаций"/></TextBlock>
+                <TextBlock><Run Text="10 локаций"/></TextBlock>
+                <TextBlock><Run Text="11 локаций"/></TextBlock>
+                <TextBlock><Run Text="12 локаций"/></TextBlock>
+                <TextBlock><Run Text="13 локаций"/></TextBlock>
+                <TextBlock><Run Text="14 локаций"/></TextBlock>
+                <TextBlock><Run Text="15 локаций"/></TextBlock>
+                <TextBlock><Run Text="16 локаций"/></TextBlock>
+                <TextBlock><Run Text="17 локаций"/></TextBlock>
+                <TextBlock><Run Text="18 локаций"/></TextBlock>
+                <TextBlock><Run Text="19 локаций"/></TextBlock>
+                <TextBlock><Run Text="20 локаций"/></TextBlock>
+            </ComboBox>
+            <Label Height="auto" Width="auto" Foreground="White" Margin="0,15,0,0" HorizontalContentAlignment="Center" Content="Введите количество участников:" FontFamily="Lena" FontSize="30"/>
+            <TextBox 
+            x:Name="membNumb"
+            Height="40" 
+            Width="300"
+            TextAlignment="Center"
+            MaxLength="3"
+            PreviewTextInput="TextBoxInput"
+            VerticalContentAlignment="Center"
+            TextChanged="DeleteSpaces"
+            Text="75" FontFamily="Lena" FontSize="20"/>
+            <Button Click="TableGenerationButton" Foreground="White" Background="Transparent" KeyDown="EnterButton" Height="40" Width="300" Margin="0,30,0,0" Content="Сгенерировать таблицу" FontFamily="Lena" FontSize="20"/>
+            <Button Click="OpenDevWindowButton" Foreground="White" Background="Transparent" Height="40" Width="300" Margin="0,30,0,0" Content="О разработчиках" FontFamily="Lena" FontSize="20"/>
+            <Label x:Name="Test1"></Label>
+        </StackPanel>
+    </Grid>
+       
+</Window>

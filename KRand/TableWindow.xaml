@@ -1,0 +1,29 @@
+﻿<Window x:Class="KRand.TableWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KRand"
+        mc:Ignorable="d"
+        Title="Таблица маршрутов" Height="675" Width="1200"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="TableWindBG.png"></ImageBrush>
+        </Grid.Background>
+        <ScrollViewer>
+            <StackPanel HorizontalAlignment="Center">
+                <Label x:Name="infoLabel1" Margin="0,20,0,0" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena" FontSize="30">Lorem Ipsum</Label>
+                <Label x:Name="infoLabel2" Foreground="White" HorizontalAlignment="Center" FontFamily="Lena" FontSize="30">Lorem Ipsum</Label>
+                <Label x:Name="infoLabel3" HorizontalAlignment="Center">Lorem Ipsum</Label>
+                <Button Click="ExportToExcelButton" Height="40" Foreground="White" Background="Transparent" Width="200" Content="Экспорт в Excel" Margin="0,15,0,0" FontFamily="Lena" FontSize="20"/>
+                <DataGrid 
+            x:Name="membRoute"
+                AutoGenerateColumns="True"
+                Margin="0,15,0,0"></DataGrid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+
+
+</Window>
